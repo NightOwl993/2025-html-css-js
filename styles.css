@@ -1,0 +1,94 @@
+/*Estilo da aplicação */
+/* criando variaveis  */
+:root {
+    /* cores  */
+    --cor-primaria: #242424;
+    --cor-secundaria: #ad752c;
+    --cor-fundo: #25221f;
+    --cor-texto: #f3d38d;
+    /* espaçamento  */
+    --espaços-xxs: 4px;
+    --espaços-xs: 8px;
+    --espaços-sm: 12px;
+    --espaços-md: 16px;
+    --espaços-lg: 24px;
+    --espaços-xl: 32px;
+    --espaços-xxl: 48px;
+    --espaco-lg: 24px;
+}
+
+/* eu quero mudar o componente html */
+body {
+    /*fonte*/
+    font-family: Arial, Helvetica, sans-serif;
+    /* margem externa */
+    margin: 0;
+    /*margem interna*/
+    padding: 0;
+    /* cor fundo */
+    background-color: var(--cor-fundo);
+    /* Cor do texto  */
+    color: var(--cor-texto)
+}
+
+/* configuração do container  */
+.container {
+    /* tamanho maximo */
+    max-width: 1200;
+    margin: 0 auto;
+    padding: var(--espaco-lg);
+}
+
+/* cabeçalho */
+header {
+    background-color: var(--cor-primaria);
+    padding: var(--espaco-lg);
+    /* alinhamento do texto  */
+    text-align: center;
+    color: #f3d38d;
+    font-size: 24px;
+}
+
+/* menu de navegação  */
+nav {
+    background-color: var(--cor-secundaria);
+    padding: var(--espaços-sm);
+    text-align: center;
+}
+
+/* mudar apenas os links  */
+nav a {
+    color: #f3d38d;
+    /* remover o traço embaixo do link  */
+    text-decoration: none;
+    /* 10px superior e inferior  */
+    /* 20ox direita e esquerda  */
+    padding: 10px 20px;
+    /* ele ocupa o espaço do texto e/ou a dimensão do componente  */
+    display: inline-block;
+}
+
+/* configurar o hoover do link  */
+nav a:hover {
+    background-color: rgb(153, 97, 13);
+}
+
+/* configurar o main  */
+main {
+    padding: var(--espaco-lg);
+    text-align: center;
+
+}
+/* rodape  */
+footer{
+    background-color: var(--cor-secundaria);
+    color: white;
+    text-align: center;
+    padding: var(--espaços-sm);
+    /* fixar o conteudo a tela  */
+    position: fixed;
+    /* fixar no final da pagina  */
+bottom: 0;
+width: 100%;
+font-size:12px;
+} 
