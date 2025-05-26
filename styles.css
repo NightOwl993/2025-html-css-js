@@ -79,8 +79,9 @@ main {
     text-align: center;
 
 }
+
 /* rodape  */
-footer{
+footer {
     background-color: var(--cor-secundaria);
     color: white;
     text-align: center;
@@ -88,7 +89,70 @@ footer{
     /* fixar o conteudo a tela  */
     position: fixed;
     /* fixar no final da pagina  */
-bottom: 0;
-width: 100%;
-font-size:12px;
-} 
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+}
+
+/* Listas*/
+ol ul {
+    /*ajusta a lista para dentro*/
+    list-style-position: inside;
+    /*sem margem interna esquerda*/
+    padding-left: 0px;
+    /*alinhamento de texto*/
+    text-align: left;
+}
+
+li {
+    /*margem inferior*/
+    margin-bottom: 5px;
+
+}
+
+/* Cartoes = card  */
+
+.portifolio-container {
+    /* organizar o container */
+    display: flex;
+    /* alinhamento do conteudo */
+    justify-content: center;
+    /* quebra de linha */
+    flex-wrap: wrap;
+    /* espaçamento */
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid rgb(255, 222, 179);
+}
+
+.card {
+    width: 300px;
+    /* Inserir borda */
+    border: 1px solid #ad752c;
+    padding: 15px;
+    text-align: center;
+    background-color: #ad752c;
+    /* sombra do box */
+    box-shadow: 2px 2px 10px rgb(117, 84, 22);
+    transition: transform 0.3s;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 9px 15px;
+    background-color: rgb(223, 188, 125);
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    /* arredondamento */
+    border-radius: 5px;
+}
+
+.card a:hover{
+    background-color: rgb(100, 89, 70);
+}
